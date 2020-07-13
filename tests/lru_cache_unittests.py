@@ -95,4 +95,3 @@ def test_integration(size, items_to_insert, get_query):
     else:
         with pytest.raises(LRUCacheNotFoundException):
             cache.get(get_query[0])
-
