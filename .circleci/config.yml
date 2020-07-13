@@ -9,9 +9,9 @@ jobs:
     steps:
       - checkout  
       - run:
-          command: |  
-            sudo pip install pipenv
-            pipenv install
+        command: |  
+          sudo pip install pipenv
+          pipenv install
       - run:
         command: |
           pipenv run pytest tests/lru_cache_unittests.py
