@@ -4,7 +4,7 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build-and-test:
+  test-and-deploy:
     executor: python/default
     steps:
       - checkout  
@@ -15,6 +15,10 @@ jobs:
       - run:
           command: |
             pipenv run pytest tests/lru_cache_unittests.py
+      - run:
+          command: |
+            pipenv run setup.py sdist bdist_wheel
+            twine upload -u __token__ -p $PYPI_PASSWORD --repository testpypi dist/*
 
 
 workflows:
