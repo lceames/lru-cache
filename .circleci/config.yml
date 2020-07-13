@@ -17,8 +17,8 @@ jobs:
             pipenv run pytest tests/lru_cache_unittests.py
       - run:
           command: |
-            pipenv run setup.py sdist bdist_wheel
-            twine upload -u __token__ -p $PYPI_PASSWORD --repository testpypi dist/*
+            pipenv run python setup.py sdist bdist_wheel
+            pipenv run twine upload -u __token__ -p $PYPI_PASSWORD --repository testpypi dist/*
 
 
 workflows:
