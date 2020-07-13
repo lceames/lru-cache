@@ -12,3 +12,9 @@ The unit tests use `pytest`, which can be installed using a virtual environment 
 4. `pipenv sync`
 5. `pytest lru_cache_unittests.py`
 
+# To-Do
+
+1. Add versioning
+2. Add PyPi deployment to CircleCI
+
+

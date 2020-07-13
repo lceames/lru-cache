@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="lru-cache-lceames", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Lee Eames",
     author_email="lceames@gmail.com",
     description="An efficient LRUCache class leveraging the OrderedDict class",
