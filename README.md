@@ -2,7 +2,7 @@
 
 This LRU Cache module is intended to be used with Python 3.8 but it is likely backward compatible with other versions of Python 3. The module only uses the Python standard library so no packages need be installed to use it. To use it, you have two options: 
 1. Clone this repo and import the `lru_cache` module and create an instance of the `lru_cache.LRUCache` class. 
-2. Install the `lru_cache` package from PyPi (Test) with some variation of the following command (depending on your virtual environment manager): `pip install --index-url https://test.pypi.org/simple/ --no-deps lru-cache-lceames`
+2. Install the `lru_cache` package from PyPi (Test) with some variation of the following command (depending on your virtual environment manager): `pip install -i https://test.pypi.org/simple/ lru-cache-lceames==0.0.2`
 
 The unit tests use `pytest`, which can be installed using a virtual environment manager of your choosing. One option is to use `pipenv` and the `Pipfile` in this repo. To do so, use the following instructions. 
 
