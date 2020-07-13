@@ -77,6 +77,7 @@ def test_reset():
         cache.put(i, i)
 
     cache.reset()
+    assert len(cache.items) == 0
     for i in range(3):
         with pytest.raises(LRUCacheNotFoundException):
             cache.get(i)
