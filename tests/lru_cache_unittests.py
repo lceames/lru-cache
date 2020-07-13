@@ -1,6 +1,6 @@
 from collections import Hashable
 
-from lru_cache import LRUCache, LRUCacheNotFoundException, LRUCacheArgumentTypeException
+from cache import LRUCache, LRUCacheNotFoundException, LRUCacheArgumentTypeException
 
 import pytest
 
